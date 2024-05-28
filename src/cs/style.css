@@ -21,6 +21,7 @@ header {
 .main-icon {
     width: 60px;
     height: 60px;
+    margin-right: 6px;
 }
 
 .info-header {
@@ -56,7 +57,7 @@ header {
 .telephone-header img {
     width: 24px;
     height: 24px;
-    margin: 10px;
+    margin: 12px;
 }
 
 .telephone-header p {
@@ -153,9 +154,50 @@ header {
     height: 616px;
 }
 
+.outcome {
+    background-color: var(--black);
+    color: var(--white);
+    height: 924px;
+    padding: 80px 152px;
+    display: flex;
+    flex-direction: column;
+}
 
+.outcome-title {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+    margin-bottom: 80px;
+}
 
+.outcome .data {
+    display: flex;
+    justify-content: space-between;
+}
 
+.number {
+    text-align: center;
+    width: 376px;
+    margin-bottom: 80px;
+}
+
+.number h2 {
+    color: var(--yellow);
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.number p {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.sliders {
+    height: 326px;
+    text-align: center;
+    background-color: aliceblue;
+}
 
 
 
