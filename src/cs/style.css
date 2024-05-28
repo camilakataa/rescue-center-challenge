@@ -85,6 +85,77 @@ header {
     height: 32px;
 }
 
+.home {
+    height: 816px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 80px 152px 120px 152px;
+}
+
+.about {
+    width: 584px;
+}
+
+.about h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
+    margin-bottom: 24px;
+}
+
+.about p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38.4px;
+    margin-bottom: 48px;
+}
+
+.about h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.home .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.home .buttons .donate-button {
+    width: 177px;
+    margin-left: 0;
+    margin-right: 32px;
+}
+
+#adopt-button {
+    width: 257px;
+    height: 64px;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;   
+    font-weight: 700;
+    background-color: var(--gray-light);
+    border: 2px var(--black) solid;
+}
+
+#adopt-button img {
+    margin-right: 8px;
+    width: 32px;
+    height: 32px;
+}
+
+.main-image {
+    width: 584px;
+    height: 616px;
+}
+
+
+
+
 
 
 
