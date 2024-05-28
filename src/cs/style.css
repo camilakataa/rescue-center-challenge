@@ -1,5 +1,205 @@
 body {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
     height: 100vh;
+    background-color: var(--gray-light);
+    color: var(--black);
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 1208px;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--black);
+}
+
+.main-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-nav ul {
+    display: flex;
+    font-family: "Inter", sans-serif;
+}
+
+.header-nav ul li {
+    display: flex;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+}
+
+.telephone-header {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.telephone-header img {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+.telephone-header p {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.donate-button {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 22px;
+    width: 181px;
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--pink);
+    border-radius: 32px;
+    margin-left: 10px;
+}
+
+.donate-button img {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    height: 603px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1208px;
+    height: 334px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid var(--black);
+}
+
+.logo-footer {
+    width: 272px;
+    height: 272px;
+
+}
+
+#logo-animals {
+    width: 100px;
+    height: 100px;
+}
+
+#pink-heart {
+    width: 36px;
+    height: 36px;
+}
+
+.logo-footer h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    margin: 16px 0;
+}
+
+.logo-footer p {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer-nav ul {
+    height: 272px;
+    display: grid;
+    grid-template-columns: 272px 272px;
+    column-gap: 40px;
+}
+
+.footer-nav ul li {
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.contact-info {
+    width: 272px;
+    height: 272px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-footer ul li {
+    display: flex;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.contact-footer ul li img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.social-media ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.social-media ul li {
+    margin-right: 20px;
+}
+
+.social-media ul li img {
+    width: 32px;
+    height: 32px;
+}
+
+.slogan {
+    width: 1208px;
+    margin-top: 60px;
+}
+
+.slogan p {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 51.2px;
+    text-align: center;
+}
+
+.slogan p span {
+    color: var(--pink);
+    font-weight: 700;
 }

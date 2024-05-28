@@ -16,27 +16,32 @@
     <link rel="stylesheet" href="./src/cs/reset.css">
     <link rel="stylesheet" href="./src/cs/variables.css">
     <link rel="stylesheet" href="./src/cs/style.css">
+    <link rel="stylesheet" href="./src/cs/responsible.css">
 
     <title>Rescue Center</title>
 </head>
 <body>
     <header>
-        <img class="main-icon" src="./src/assets/images/animals-main-icon.png" alt="dog and cat icon">
-        <nav class="header-nav">
-            <ul>
-                <li>Rescue center</li>
-                <li>Apply to adopt</li>
-                <li>Volunteer</li>
-                <li>Ways to give</li>
-                <li>Events</li>
-            </ul>
-        </nav>
-        <div class="info-header">
-            <div class="contact-header">
-                <img src="./src/assets/images/cel-icon.png" alt="telephone icon">
-                <p>631-249-7325</p>
+        <div class="header">
+            <div class="info-header">
+                <img class="main-icon" src="./src/assets/images/animals-main-icon.png" alt="dog and cat icon">
+                <nav class="header-nav">
+                    <ul>
+                        <li>Rescue center</li>
+                        <li>Apply to adopt</li>
+                        <li>Volunteer</li>
+                        <li>Ways to give</li>
+                        <li>Events</li>
+                    </ul>
+                </nav>
             </div>
-            <button class="donate-button">Donate</button>
+            <div class="contact-header">
+                <div class="telephone-header">
+                    <img src="./src/assets/images/cell-icon.png" alt="telephone icon">
+                    <p>631-249-7325</p>
+                </div>
+                <button class="donate-button"><img src="./src/assets/images/hear-icon.png" alt="heart icon">Donate</button>
+            </div>
         </div>
     </header>
 
@@ -45,12 +50,12 @@
     <footer>
         <div class="info-footer">
             <div class="logo-footer">
-                <img src="./src/assets/images/animals-main-icon.png" alt="cat and dog icon">
+                <img id="logo-animals" src="./src/assets/images/Logo.png" alt="cat and dog icon">
                 <div>
                     <h2>
                         FOREVER <br>
                         HOMES
-                        <img src="./src/assets/images/pink-heart-icon.png" alt="pink heart">
+                        <img id="pink-heart" src="./src/assets/images/pink-heart-icon.png" alt="pink heart">
                     </h2>
                 </div>
                 <p>Helps Save Lives</p>
@@ -71,7 +76,7 @@
                     <li>Adopt a Pet</li>
                 </ul>
             </nav>
-            <div>
+            <div class="contact-info">
                 <div class="contact-footer">
                     <ul>
                         <li id="adress">
@@ -82,7 +87,7 @@
                             </p>
                         </li>
                         <li id="telephone">
-                            <img src="./src/assets/images/cel-icon.png" alt="telephone icon">
+                            <img src="./src/assets/images/cell-icon.png" alt="telephone icon">
                             <p>631-249-7325</p>
                         </li>
                         <li id="email">
