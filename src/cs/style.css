@@ -257,8 +257,71 @@ header {
     line-height: 32px;
 }
 
+.adoption {
+    height: 907px;
+    padding: 80px 152px 120px 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.adoption-title {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
 
+.about-adoption {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+}
+
+.adoption-image {
+    width: 584px;
+    height: 616px;
+    margin-right: 40px;
+}
+
+.adoption-info {
+    width: 584px;
+    height: 616px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.adoption-info h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.adoption-items {
+    list-style: disc;
+    height: 368px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.adoption-items .adoption-item {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.adoption-button {
+    width: 217px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: var(--black);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+}
 
 
 
