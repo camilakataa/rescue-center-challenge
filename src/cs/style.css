@@ -199,7 +199,63 @@ header {
     background-color: aliceblue;
 }
 
+.provider {
+    height: 1117px;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 80px 152px 120px 152px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.provider h2 {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.provider-items {
+    height: 770px;
+    display: grid;
+    grid-template-columns: 376px 376px 376px;
+    column-gap: 40px;
+    row-gap: 60px;
+}
+
+.provider-items .items {
+    border: 2px var(--white) solid;
+    border-radius: 24px;
+    padding: 29.5px 36px;
+}
+
+.title-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.items-transport {
+    padding: 36px 24px;
+    border: 2px var(--white) solid;
+    border-radius: 24px;
+}
+
+.title-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.provider-items p { 
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+}
 
 
 
