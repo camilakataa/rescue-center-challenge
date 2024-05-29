@@ -407,6 +407,83 @@ header {
     color: var(--white);
 }
 
+.find-pet {
+    height: 482px;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 152px 120px 152px ;
+    position: relative;
+}
+
+.find-pet img{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    bottom: 0;
+}
+
+.find-pet .pet-left {
+    left: 66px;
+}
+
+.find-pet .pet-right {
+    right: 66px;
+}
+
+.find-info {
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.find-info h2 {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.find-info span {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    color: var(--yellow);
+}
+
+.find-info p {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+
+.view-button, .apply-button {
+    height: 64px;
+    border-radius: 32px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 12px;
+}
+
+.view-button {
+    width: 238px;
+    background-color: var(--yellow);
+    color: var(--black);
+}
+
+.apply-button {
+    width: 223px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px var(--white) solid;
+}
+
+
+
+
 
 footer {
     height: 603px;
