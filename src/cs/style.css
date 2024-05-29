@@ -481,9 +481,57 @@ header {
     border: 2px var(--white) solid;
 }
 
+.subscribe {
+    background-color: var(--purple);
+    color: var(--white);
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 152px;
+}
 
+.subscribe-info h2 {
+    font-size: 56px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
 
+.subscribe-info p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
 
+#email-input {
+    background-color: var(--purple);
+    width: 395px;
+    height: 64px;
+    border-radius: 32px;
+    border: 2px var(--white) solid;
+    padding: 16px 24px;
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 24px;
+}
+
+#email-input::placeholder {
+    color: var(--transparent-middle);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#submit-email {
+    width: 170px;
+    height: 64px;
+    border-radius: 32px;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 20px;
+    font-weight: 700;
+}
 
 footer {
     height: 603px;
