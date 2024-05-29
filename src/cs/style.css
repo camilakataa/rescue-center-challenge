@@ -323,6 +323,89 @@ header {
     font-weight: 700;
 }
 
+.make-a-difference {
+    background-color: var(--black);
+    color: var(--white);
+    height: 732px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 152px 80px 152px
+}
+
+.difference-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.difference-title h2 {
+    font-size: 56px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 67.2px;
+}
+
+.difference-title img {
+    width: 100px;
+    height: 100px;
+}
+
+.difference-items {
+    height: 358px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.difference-items .item {
+    border: 2px var(--white) solid;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 24px;
+}
+
+.difference-items .item h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.difference-items .item p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.difference-items .item button {
+    height: 64px;
+    width: 224px;
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.difference-items .adopt button {
+    background-color: var(--green);
+}
+
+.difference-items .volunteer button {
+    background-color: var(--yellow-dark);
+}
+
+.difference-items .donate button {
+    background-color: var(--pink);
+    color: var(--white);
+}
+
+.difference-items .fundraiser button {
+    background-color: var(--purple);
+    color: var(--white);
+}
 
 
 footer {
