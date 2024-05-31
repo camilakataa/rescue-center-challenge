@@ -1,0 +1,50 @@
+.success {
+    height: 860px;
+    padding: 80px 120px;
+    position: relative;
+}
+
+#back-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    padding: 16px 32px;
+    border-radius: 32px;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+#back-button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.success h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.success p {
+    width: 500px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.success span {
+    color: var(--pink);
+    font-weight: 700;
+}
+
+#background-image {
+    position: absolute;
+    right: 100px;
+    top: 40px;
+    height: 690px;
+    z-index: -1;
+}

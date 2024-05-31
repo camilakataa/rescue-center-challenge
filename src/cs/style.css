@@ -107,7 +107,6 @@ header {
 
 .about p {
     font-family: "Inter", sans-serif;
-    font-weight: 500;
     font-size: 24px;
     line-height: 38.4px;
     margin-bottom: 48px;
@@ -253,7 +252,6 @@ header {
 .provider-items p { 
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    font-weight: 500;
     line-height: 32px;
 }
 
@@ -310,7 +308,6 @@ header {
 .adoption-items .adoption-item {
     font-family: "Inter", sans-serif;
     font-size: 24px;
-    font-weight: 500;
 }
 
 .adoption-button {
@@ -377,7 +374,6 @@ header {
 .difference-items .item p {
     font-family: "Inter", sans-serif;
     font-size: 20px;
-    font-weight: 500;
     text-align: center;
 }
 
