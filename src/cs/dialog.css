@@ -1,5 +1,5 @@
 dialog::backdrop {
-    background-color: (0 0 0 / 1.5);
+    background-color: (0 0 0 / 0.5);
 }
 
 #apply-to-adopt {
@@ -10,6 +10,7 @@ dialog::backdrop {
     border-radius: 32px;
     top: 10%;
     left: 35%;
+    overflow-y: hidden;
 }
 
 .modal-tittle {
@@ -45,7 +46,7 @@ dialog::backdrop {
 }
 
 #email-adopt, #full-name {
-    border: 2px var(--purple-light) solid;
+    border: 1px var(--purple-light) solid;
     width: 100%;
     height: 56px;
     border-radius: 8px;
@@ -62,7 +63,7 @@ dialog::backdrop {
 }
 
 select {
-    border: 2px var(--purple-light) solid;
+    border: 1px var(--purple-light) solid;
     height: 56px;
     width: 122.67px;
     border-radius: 8px;
@@ -117,4 +118,145 @@ select {
 
 #cancel {
     background-color: var(--gray-dark);
+}
+
+#donation {
+    background-color: var(--white);
+    width: 480px;
+    height: 716px;
+    padding: 32PX;
+    border-radius: 32px;
+    top: 10%;
+    left: 35%;
+    overflow-y: hidden;
+}
+
+#donation h2 {
+    font-size: 48px;
+    line-height: 57.6px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.donation-form h3 {
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.donation-form span {
+    color: var(--blue-light);
+}
+
+.donation-form #donate-email, .donation-form #money {
+    border: 1px var(--purple-light) solid;
+    height: 56px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+#money {
+    text-align: end;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.payment {
+    margin-bottom: 24px;
+}
+
+.payment-inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payment label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px var(--purple-light) solid;
+    width: 133.33px;
+    height: 56px;
+    padding: 16px;
+    position: relative;
+}
+
+label::before{
+    position: absolute;
+    content: " ";
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    right: 16px;
+    background-color: var(--black);
+}
+
+input[type="radio"]:checked + label{
+    background-color: var(--blue-light);
+}
+
+input[type="radio"]:checked + label::before {
+    background-color: var(--pink);
+    background-image: url(../assets/images/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.donate-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.donate-modal-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink);
+    color: var(--white);
+    width: 249px;
+    height: 64px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.donate-modal-button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.cancel-donate-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-dark);
+    color: var(--white);
+    width: 177px;
+    height: 64px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.cancel-donate-button img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
 }

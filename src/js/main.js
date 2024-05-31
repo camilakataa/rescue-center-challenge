@@ -25,6 +25,6 @@ function closeAdoptModal() {
     adoptModal.close();
 }
 
-function cloaseDonateModal() {
+function closeDonateModal() {
     donateModal.close();
 }
