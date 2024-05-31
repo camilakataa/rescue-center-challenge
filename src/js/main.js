@@ -5,3 +5,7 @@ function adoptAPet() {
 function back() {
     window.location.href = "../../index.html"
 }
+
+function viewSuccess() {
+    window.location.href = "./src/pages/success.html"
+}
