@@ -1,0 +1,120 @@
+dialog::backdrop {
+    background-color: (0 0 0 / 1.5);
+}
+
+#apply-to-adopt {
+    background-color: var(--white);
+    width: 448px;
+    height: 686px;
+    padding: 32PX;
+    border-radius: 32px;
+    top: 10%;
+    left: 35%;
+}
+
+.modal-tittle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.modal-tittle h2{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px
+}
+
+.modal-tittle p {
+    font-size: 18px;
+    text-align: center;
+}
+
+.modal-form h3 {
+    color: var(--pink);
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.modal-form h3 span {
+    color: var(--blue-light);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#email-adopt, #full-name {
+    border: 2px var(--purple-light) solid;
+    width: 100%;
+    height: 56px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+select {
+    border: 2px var(--purple-light) solid;
+    height: 56px;
+    width: 122.67px;
+    border-radius: 8px;
+    padding: 16px;
+    font-size: 16px;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.submit .conditions {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin: 4px;
+    margin-bottom: 12px;
+}
+
+.submit .conditions a {
+    color: var(--pink);
+}
+
+.submit .conditions input {
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+#conditions {
+    vertical-align: center;
+}
+
+#wanna-adopt, #cancel {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+#wanna-adopt img, #cancel img {
+    margin-right: 8px;
+}
+
+#wanna-adopt {
+    background-color: var(--green);
+    margin-bottom: 12px;
+}
+
+#cancel {
+    background-color: var(--gray-dark);
+}

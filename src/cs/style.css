@@ -155,7 +155,6 @@ header {
 
 .outcome {
     background-color: var(--black);
-    color: var(--white);
     height: 924px;
     padding: 80px 152px;
     display: flex;
@@ -163,6 +162,7 @@ header {
 }
 
 .outcome-title {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     line-height: 67.2px;
@@ -190,6 +190,7 @@ header {
 .number p {
     font-size: 32px;
     font-weight: 700;
+    color: var(--white);
 }
 
 .sliders {
@@ -201,7 +202,6 @@ header {
 .provider {
     height: 1117px;
     background-color: var(--black);
-    color: var(--white);
     padding: 80px 152px 120px 152px;
     display: flex;
     flex-direction: column;
@@ -210,6 +210,7 @@ header {
 }
 
 .provider h2 {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     text-align: center;
@@ -228,28 +229,39 @@ header {
     border: 2px var(--white) solid;
     border-radius: 24px;
     padding: 29.5px 36px;
+    position: relative;
 }
 
 .title-item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.title-item h3 {
+    color: var(--white);
     font-size: 32px;
     font-weight: 700;
+    margin-top: 24px;
+    margin-bottom: 16px;
 }
 
 .items-transport {
     padding: 36px 24px;
     border: 2px var(--white) solid;
     border-radius: 24px;
+    position: relative;
 }
 
 .title-item img {
     width: 100px;
     height: 100px;
+    position: absolute;
+    right: 24px;
+    top: 24px;
 }
 
 .provider-items p { 
+    color: var(--white);
     font-family: "Inter", sans-serif;
     font-size: 20px;
     line-height: 32px;
@@ -322,7 +334,6 @@ header {
 
 .make-a-difference {
     background-color: var(--black);
-    color: var(--white);
     height: 732px;
     display: flex;
     flex-direction: column;
@@ -339,6 +350,7 @@ header {
 }
 
 .difference-title h2 {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     text-align: center;
@@ -367,11 +379,13 @@ header {
 }
 
 .difference-items .item h3 {
+    color: var(--white);
     font-size: 24px;
     font-weight: 700;
 }
 
 .difference-items .item p {
+    color: var(--white);
     font-family: "Inter", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -406,7 +420,6 @@ header {
 .find-pet {
     height: 482px;
     background-color: var(--black);
-    color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -437,6 +450,7 @@ header {
 }
 
 .find-info h2 {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     text-align: center;
@@ -451,6 +465,7 @@ header {
 }
 
 .find-info p {
+    color: var(--white);
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 28px;
@@ -479,7 +494,6 @@ header {
 
 .subscribe {
     background-color: var(--purple);
-    color: var(--white);
     height: 431px;
     display: flex;
     flex-direction: column;
@@ -489,12 +503,14 @@ header {
 }
 
 .subscribe-info h2 {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 12px;
 }
 
 .subscribe-info p {
+    color: var(--white);
     font-family: "Inter", sans-serif;
     font-size: 20px;
     text-align: center;
@@ -638,4 +654,8 @@ footer {
 .slogan p span {
     color: var(--pink);
     font-weight: 700;
+}
+
+button:hover {
+    cursor: pointer;
 }
