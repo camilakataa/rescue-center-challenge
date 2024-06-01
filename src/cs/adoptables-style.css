@@ -1,7 +1,6 @@
 .adoptables {
     height: 1289px;
     background-color: var(--black);
-    color: var(--white);
     padding: 80px 152px;
     display: flex;
     flex-direction: column;
@@ -29,6 +28,7 @@
 }
 
 .adoptables h2 {
+    color: var(--white);
     font-size: 56px;
     font-weight: 700;
     margin-bottom: 80px;
@@ -50,6 +50,7 @@
 }
 
 .pet .pet-name {
+    color: var(--white);
     font-size: 32px;
     font-weight: 700;
 

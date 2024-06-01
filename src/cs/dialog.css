@@ -87,6 +87,7 @@ select {
 
 .submit .conditions a {
     color: var(--pink);
+    margin: 0 2px;
 }
 
 .submit .conditions input {
@@ -119,6 +120,24 @@ select {
 #cancel {
     background-color: var(--gray-dark);
 }
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: var(--black);
+    transition: 0.3s ease-in-out;
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--green);
+    background-image: url(../assets/images/check.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 #donation {
     background-color: var(--white);
@@ -199,6 +218,7 @@ label::before{
     border-radius: 50%;
     right: 16px;
     background-color: var(--black);
+    transition: 0.3s ease-in-out;
 }
 
 input[type="radio"]:checked + label{
