@@ -145,7 +145,7 @@ input[type="checkbox"]:checked {
     height: 716px;
     padding: 32PX;
     border-radius: 32px;
-    top: 10%;
+    top: 15%;
     left: 35%;
     overflow-y: hidden;
 }
@@ -177,6 +177,20 @@ input[type="checkbox"]:checked {
     padding: 16px;
     font-size: 16px;
     margin-bottom: 24px;
+}
+
+.donate-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.donate-error {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 80px;
+    font-size: 12px;
 }
 
 #money {
@@ -240,7 +254,7 @@ input[type="radio"]:checked + label::before {
     align-items: center;
 }
 
-.donate-modal-button {
+#donate-modal-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,7 +269,7 @@ input[type="radio"]:checked + label::before {
     margin-bottom: 24px;
 }
 
-.donate-modal-button img {
+#donate-modal-button img {
     width: 32px;
     height: 32px;
     margin-right: 8px;

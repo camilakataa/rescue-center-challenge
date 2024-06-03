@@ -42,7 +42,6 @@ donateModal.addEventListener('click', (event) => {
     }
 })
 
-
 const regexEmail = /\S+@\S+\.\S+/;
 const emailSubmit = document.getElementById('email-input');
 const spanEmail = document.getElementById('submit-span');
@@ -58,3 +57,47 @@ emailSubmitButton.addEventListener('click', (e) => {
     }
 })
 
+const inputsDonate = document.querySelectorAll('.donate-item');
+const spansDonate = document.querySelectorAll('.donate-error');
+const donationButton = document.getElementById('donate-modal-button');
+let isValidEmail = false;
+let isValidMoney = false;
+
+donationButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    emailDonationValidation();
+    moneyDonationValidation();
+
+    if (isValidEmail && isValidMoney) {
+        viewSuccess()
+    }
+    
+})
+
+function setError(index) {
+    inputsDonate[index].style.border = '1px solid red';
+    spansDonate[index].style.display = 'block';
+}
+
+function removeError(index) {
+    inputsDonate[index].style.border = '1px var(--purple-light) solid';
+    spansDonate[index].style.display = 'none';
+}
+
+let emailDonationValidation = () => {
+    if (regexEmail.test(inputsDonate[0].value)) {
+        removeError(0);
+        isValidEmail = true;
+    } else {
+        setError(0);
+    }
+}
+
+let moneyDonationValidation = () => {
+    if(Number(inputsDonate[1].value) > 0) {
+        removeError(1);
+        isValidMoney = true;
+    } else {
+        setError(1);
+    }
+}
