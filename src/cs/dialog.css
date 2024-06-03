@@ -200,12 +200,13 @@ input[type="radio"] {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
     cursor: pointer;
     font-size: 16px;
     border-radius: 8px;
     border: 1px var(--purple-light) solid;
     width: 133.33px;
-    height: 56px;
+    height: fit-content;
     padding: 16px;
     position: relative;
 }
@@ -223,7 +224,6 @@ label::before{
 
 input[type="radio"]:checked + label{
     background-color: var(--blue-light);
-    height: 80px;
 }
 
 input[type="radio"]:checked + label::before {
