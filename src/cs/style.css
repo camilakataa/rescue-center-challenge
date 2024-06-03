@@ -515,6 +515,22 @@ header {
     text-align: center;
 }
 
+.subscribe-form {
+    display: flex;
+}
+
+.email-submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-submit span {
+    display: none;
+    font-size: 20px;
+    padding: 6px 24px;
+    color: red;
+}
+
 #email-input {
     background-color: var(--purple);
     width: 395px;

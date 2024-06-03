@@ -223,6 +223,7 @@ label::before{
 
 input[type="radio"]:checked + label{
     background-color: var(--blue-light);
+    height: 80px;
 }
 
 input[type="radio"]:checked + label::before {

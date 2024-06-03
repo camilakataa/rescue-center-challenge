@@ -67,7 +67,7 @@
         <h2>Apply to Adopt</h2>
         <p>Give a loving home to a pet in need!</p>
       </div>
-      <form class="modal-form">
+      <form class="modal-form" autocomplete="off">
         <h3>EMAIL<span>*</span></h3>
         <input type="text" name="email-adpot" id="email-adopt" placeholder="youremail@here">
         <h3>FULL NAME<span>*</span></h3>
@@ -176,7 +176,7 @@
 
     <dialog id="donation">
       <h2>Choose your Donate</h2>
-      <form class="donation-form">
+      <form class="donation-form" autocomplete="off">
         <div class="donate-email">
           <h3>EMAIL<span>*</span></h3>
           <input type="text" name="donate-email" id="donate-email" placeholder="youremail@here">
@@ -433,15 +433,17 @@
             of animals finding their forever homes.
           </p>
         </div>
-        <form class="subscribe-form">
+        <form class="subscribe-form" autocomplete="off">
+          <div class="email-submit">
           <input
-            type="text"
+            type="email"
             name="email"
             id="email-input"
             placeholder="Enter your email"
-            required
           />
-          <button type="submit" id="submit-email" onclick="viewSuccess()">Submit</button>
+          <span id="submit-span">Invalid email address</span>
+          </div>
+          <button type="submit" id="submit-email">Submit</button>
         </form>
       </section>
     </main>

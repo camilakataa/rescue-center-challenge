@@ -10,8 +10,9 @@ function viewSuccess() {
     window.location.href = "./src/pages/success.html"
 }
 
-let adoptModal = document.getElementById('apply-to-adopt');
-let donateModal = document.getElementById('donation');
+const adoptModal = document.getElementById('apply-to-adopt');
+const donateModal = document.getElementById('donation');
+const dialogs = document.getElementsByClassName('dialogs');
 
 function handlerAdoption() {
     adoptModal.showModal();
@@ -28,3 +29,32 @@ function closeAdoptModal() {
 function closeDonateModal() {
     donateModal.close();
 }
+
+adoptModal.addEventListener('click', (event) => {
+    if (event.target == adoptModal) {
+        adoptModal.close();
+    }
+})
+
+donateModal.addEventListener('click', (event) => {
+    if (event.target == donateModal) {
+        donateModal.close();
+    }
+})
+
+
+const regexEmail = /\S+@\S+\.\S+/;
+const emailSubmit = document.getElementById('email-input');
+const spanEmail = document.getElementById('submit-span');
+const emailSubmitButton = document.getElementById('submit-email');
+
+emailSubmitButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    if (regexEmail.test(emailSubmit.value)) {
+        viewSuccess();
+    } else {
+        spanEmail.style.display = 'block';
+    }
+})
+
