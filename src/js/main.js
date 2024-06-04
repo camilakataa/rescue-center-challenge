@@ -150,3 +150,40 @@ let nameAdoptionValidation = () => {
         setErrorAdopt(1);
     }
 }
+
+const arrowLeft = document.getElementById('arrowLeft');
+const arrowRight = document.getElementById('arrowRight');
+const carousel = document.querySelector('.carousel');
+const firstPetWidth = carousel.querySelector('.carousel-item').offsetWidth;
+const dots = document.querySelectorAll('.dot');
+let i = 0;
+
+arrowRight.addEventListener('click', () => {
+    carousel.scrollLeft += firstPetWidth;
+    nextDot();
+})
+
+arrowLeft.addEventListener('click', () => {
+    carousel.scrollLeft -= firstPetWidth;
+    previousDot();
+})
+
+function nextDot() {
+    if (i < dots.length - 1) { 
+        dots[i].classList.remove('dot-checked');
+        dots[i+1].classList.add('dot-checked');
+        i++;
+    } else {
+        return;
+    }
+}
+
+function previousDot() {
+    if (i > 0) { 
+        dots[i].classList.remove('dot-checked');
+        dots[i-1].classList.add('dot-checked');
+        i--;
+    } else {
+        return;
+    }
+}

@@ -674,3 +674,60 @@ footer {
 button:hover {
     cursor: pointer;
 }
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sliders-carousel {
+    display: flex;
+}
+
+#arrowLeft, #arrowRight {
+    height: 44px;
+    width: 44px;
+    margin-top: 103px;
+    cursor: pointer;
+}
+
+.carousel {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 4));
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-carousel {
+    width: 250px;
+    height: 250px;
+}
+
+.dots {
+    height: 16px;
+    width: 144px;
+    display: flex;
+    gap: 16px;
+}
+
+.dot {
+    height: 16px;
+    width: 16px;
+    background-color: var(--transparent-min);
+    border-radius: 50%;
+}
+
+
+.dot-checked {
+    height: 16px;
+    width: 16px;
+    background-color: var(--white);
+}
