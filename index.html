@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="./src/cs/variables.css" />
     <link rel="stylesheet" href="./src/cs/reset.css" />
     <link rel="stylesheet" href="./src/cs/style.css" />
-    <link rel="stylesheet" href="./src/cs/dialog.css">
+    <link rel="stylesheet" href="./src/cs/dialog.css" />
 
     <title>Rescue Center</title>
   </head>
@@ -67,11 +67,29 @@
         <h2>Apply to Adopt</h2>
         <p>Give a loving home to a pet in need!</p>
       </div>
-      <form class="modal-form" autocomplete="off">
-        <h3>EMAIL<span>*</span></h3>
-        <input type="text" name="email-adpot" id="email-adopt" placeholder="youremail@here">
-        <h3>FULL NAME<span>*</span></h3>
-        <input type="text" name="full-name" id="full-name" placeholder="Your name">
+      <form id="adoptForm" class="modal-form" autocomplete="off">
+        <div class="adopt-items">
+          <h3>EMAIL<span>*</span></h3>
+          <input
+            class="adopt-item"
+            type="text"
+            name="email-adpot"
+            id="email-adopt"
+            placeholder="youremail@here"
+          />
+          <i class="adopt-error">Invalid email address</i>
+        </div>
+        <div class="adopt-items">
+          <h3>FULL NAME<span>*</span></h3>
+          <input
+            class="adopt-item"
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="Your name"
+          />
+          <i class="adopt-error">Please insert your name</i>
+        </div>
         <div class="birth">
           <h3>DATE OF BIRTH<span>*</span></h3>
           <div class="date">
@@ -124,7 +142,7 @@
               <option value="11">November</option>
               <option value="12">December</option>
             </select>
-            <select name="year" id="year">
+            <select name="year" id="year" required>
               <option value="" disabled selected>Year</option>
               <option value="2000">2006</option>
               <option value="2005">2005</option>
@@ -159,14 +177,30 @@
           </div>
           <div class="submit">
             <div class="conditions">
-              <input type="checkbox" name="conditions" id="conditions"> I agree with <a href="https://www.google.com.br/"  target="_blank">Privacy Policy</a> and <a href="https://www.google.com.br/" target="_blank">Terms of Conditions</a> 
+              <input
+                type="checkbox"
+                name="conditions"
+                id="conditions"
+                required
+              />
+              I agree with
+              <a href="https://www.google.com.br/" target="_blank"
+                >Privacy Policy</a
+              >
+              and
+              <a href="https://www.google.com.br/" target="_blank"
+                >Terms of Conditions</a
+              >
             </div>
             <button id="wanna-adopt" type="submit">
-              <img src="./src/assets/images/white-dog-icon.png" alt="dog icon">
+              <img
+                src="./src/assets/images/white-dog-icon.png"
+                alt="dog icon"
+              />
               I wanna Adopt!
             </button>
             <button id="cancel" onclick="closeAdoptModal()">
-              <img src="./src/assets/images/CaretLeft.png" alt="caret left">
+              <img src="./src/assets/images/CaretLeft.png" alt="caret left" />
               Cancel
             </button>
           </div>
@@ -179,25 +213,60 @@
       <form class="donation-form" autocomplete="off">
         <div class="donate-items donate-email">
           <h3>EMAIL<span>*</span></h3>
-          <input class="donate-item" type="text" name="donate-email" id="donate-email" placeholder="youremail@here">
+          <input
+            class="donate-item"
+            type="text"
+            name="donate-email"
+            id="donate-email"
+            placeholder="youremail@here"
+          />
           <i class="donate-error">Invalid email address</i>
         </div>
         <div class="donate-items donate-money">
           <h3>HOW MUCH CAN YOU HELP?<span>*</span></h3>
-          <input class="donate-item" type="text" name="money" id="money" placeholder="R$ 95,00">
+          <input
+            class="donate-item"
+            type="text"
+            name="money"
+            id="money"
+            placeholder="R$ 95,00"
+          />
           <i class="donate-error">Please insert how much you can donate</i>
         </div>
         <div class="payment">
           <h3>PAYMENT METHOD<span>*</span></h3>
           <div class="payment-inputs">
-            <input type="radio" name="payment" id="pix" checked="checked"><label class="pix" for="pix">Pix</label>
-            <input type="radio" name="payment" id="credit"><label class="credit" for="credit">Credit<br> Card</label>
-            <input type="radio" name="payment" id="debit"><label class="debit" for="debit">Debit<br> Card</label>
+            <input
+              type="radio"
+              name="payment"
+              id="pix"
+              checked="checked"
+            /><label class="pix" for="pix">Pix</label>
+            <input type="radio" name="payment" id="credit" /><label
+              class="credit"
+              for="credit"
+              >Credit<br />
+              Card</label
+            >
+            <input type="radio" name="payment" id="debit" /><label
+              class="debit"
+              for="debit"
+              >Debit<br />
+              Card</label
+            >
           </div>
         </div>
         <div class="donate-buttons">
-        <button id="donate-modal-button"><img src="./src/assets/images/heart-icon.png" alt="heart icon">I wanna Help!</button>
-        <button class="cancel-donate-button" onclick="closeDonateModal()"><img src="./src/assets/images/CaretLeft.png" alt="caret left">Cancel</button>
+          <button id="donate-modal-button">
+            <img src="./src/assets/images/heart-icon.png" alt="heart icon" />I
+            wanna Help!
+          </button>
+          <button class="cancel-donate-button" onclick="closeDonateModal()">
+            <img
+              src="./src/assets/images/CaretLeft.png"
+              alt="caret left"
+            />Cancel
+          </button>
         </div>
       </form>
     </dialog>
@@ -249,7 +318,7 @@
           </div>
         </div>
         <div class="sliders">
-          <img src="./src/assets/images/carousel.png" alt="carousel">
+          <img src="./src/assets/images/carousel.png" alt="carousel" />
         </div>
       </section>
       <section class="provider">
@@ -258,10 +327,7 @@
           <div class="items">
             <div class="title-item">
               <h3>Shelter</h3>
-              <img 
-              src="./src/assets/images/house-icon.png" 
-              alt="house icon" 
-              />
+              <img src="./src/assets/images/house-icon.png" alt="house icon" />
             </div>
             <p>
               We provide shelter for many of our cats and dogs. In addition to a
@@ -314,7 +380,7 @@
           <div class="items">
             <div class="title-item">
               <h3>Fosters</h3>
-              <img src="./src/assets/images/smile-icon.png" alt="smile icon"/>
+              <img src="./src/assets/images/smile-icon.png" alt="smile icon" />
             </div>
             <p>
               We’re lucky to have a group of individuals who generously foster
@@ -325,7 +391,7 @@
           <div class="items">
             <div class="title-item">
               <h3>Food</h3>
-              <img src="./src/assets/images/bone-icon.png" alt="bone icon"/>
+              <img src="./src/assets/images/bone-icon.png" alt="bone icon" />
             </div>
             <p>
               Each year, we nourish our cats and dogs with over 2,200 cans of
@@ -363,7 +429,9 @@
               </li>
               <li class="adoption-item">Be ready to adopt within 7-10 days</li>
             </ul>
-            <button class="adoption-button" onclick="handlerAdoption()">Apply to Adopt</button>
+            <button class="adoption-button" onclick="handlerAdoption()">
+              Apply to Adopt
+            </button>
           </div>
         </div>
       </section>
@@ -417,7 +485,9 @@
             <button class="view-button" onclick="adoptAPet()">
               View Adoptables
             </button>
-            <button class="apply-button" onclick="handlerAdoption()">Apply to Adopt</button>
+            <button class="apply-button" onclick="handlerAdoption()">
+              Apply to Adopt
+            </button>
           </div>
         </div>
         <img
@@ -437,13 +507,13 @@
         </div>
         <form class="subscribe-form" autocomplete="off">
           <div class="email-submit">
-          <input
-            type="email"
-            name="email"
-            id="email-input"
-            placeholder="Enter your email"
-          />
-          <span id="submit-span">Invalid email address</span>
+            <input
+              type="email"
+              name="email"
+              id="email-input"
+              placeholder="Enter your email"
+            />
+            <span id="submit-span">Invalid email address</span>
           </div>
           <button type="submit" id="submit-email">Submit</button>
         </form>

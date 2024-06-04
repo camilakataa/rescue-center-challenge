@@ -74,30 +74,79 @@ donationButton.addEventListener('click', (e) => {
     
 })
 
-function setError(index) {
+function setErrorDonate(index) {
     inputsDonate[index].style.border = '1px solid red';
     spansDonate[index].style.display = 'block';
 }
 
-function removeError(index) {
+function removeErrorDonate(index) {
     inputsDonate[index].style.border = '1px var(--purple-light) solid';
     spansDonate[index].style.display = 'none';
 }
 
 let emailDonationValidation = () => {
     if (regexEmail.test(inputsDonate[0].value)) {
-        removeError(0);
+        removeErrorDonate(0);
         isValidEmail = true;
     } else {
-        setError(0);
+        setErrorDonate(0);
     }
 }
 
 let moneyDonationValidation = () => {
     if(Number(inputsDonate[1].value) > 0) {
-        removeError(1);
+        removeErrorDonate(1);
         isValidMoney = true;
     } else {
-        setError(1);
+        setErrorDonate(1);
+    }
+}
+
+const inputsAdopt = document.querySelectorAll('.adopt-item');
+const spansAdopt = document.querySelectorAll('.adopt-error');
+const adoptForm = document.getElementById('adoptForm');
+const adoptButton = document.getElementById('wanna-adopt');
+
+let isValidEmailAdopt = false;
+let isValidName = false;
+
+adoptForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    if(isValidEmailAdopt && isValidName) { 
+        viewSuccess()
+    }
+})
+
+adoptButton.addEventListener('click', (e) => {
+    emailAdoptionValidation();
+    nameAdoptionValidation();
+})
+
+function setErrorAdopt(index) {
+    inputsAdopt[index].style.border = '1px solid red';
+    spansAdopt[index].style.display = 'block';
+}
+
+function removeErrorAdopt(index) {
+    inputsAdopt[index].style.border = '1px var(--purple-light) solid';
+    spansAdopt[index].style.display = 'none';
+}
+
+let emailAdoptionValidation = () => {
+    if (regexEmail.test(inputsAdopt[0].value)) {
+        removeErrorAdopt(0);
+        isValidEmailAdopt = true;
+    } else {
+        setErrorAdopt(0);
+    }
+}
+
+let nameAdoptionValidation = () => {
+    if(inputsAdopt[1].value != '') {
+        removeErrorAdopt(1);
+        isValidName = true;
+    } else {
+        setErrorAdopt(1);
     }
 }

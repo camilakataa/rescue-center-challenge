@@ -8,7 +8,7 @@ dialog::backdrop {
     height: 686px;
     padding: 32PX;
     border-radius: 32px;
-    top: 10%;
+    top: 15%;
     left: 35%;
     overflow-y: hidden;
 }
@@ -55,6 +55,19 @@ dialog::backdrop {
     padding: 16px;
 }
 
+.adopt-items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.adopt-error {
+    display: none;
+    color: red;
+    position: absolute;
+    top: 80px;
+    font-size: 12px;
+}
 
 .submit {
     display: flex;
