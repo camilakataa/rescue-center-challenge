@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="../cs/reset.css" />
     <link rel="stylesheet" href="../cs/style.css" />
     <link rel="stylesheet" href="../cs/adoptables-style.css" />
+    <link rel="stylesheet" href="../cs/dialog.css">
 
     <title>Adoptables</title>
   </head>
@@ -60,7 +61,68 @@
         </div>
       </div>
     </header>
-
+    <dialog id="donation">
+      <h2>Choose your Donate</h2>
+      <form class="donation-form" autocomplete="off">
+        <div class="donate-items donate-email">
+          <h3>EMAIL<span>*</span></h3>
+          <input
+            class="donate-item"
+            type="text"
+            name="donate-email"
+            id="donate-email"
+            placeholder="youremail@here"
+          />
+          <i class="donate-error">Invalid email address</i>
+        </div>
+        <div class="donate-items donate-money">
+          <h3>HOW MUCH CAN YOU HELP?<span>*</span></h3>
+          <input
+            class="donate-item"
+            type="text"
+            name="money"
+            id="money"
+            placeholder="R$ 95,00"
+          />
+          <i class="donate-error">Please insert how much you can donate</i>
+        </div>
+        <div class="payment">
+          <h3>PAYMENT METHOD<span>*</span></h3>
+          <div class="payment-inputs">
+            <input
+              type="radio"
+              name="payment"
+              id="pix"
+              checked="checked"
+            /><label class="pix" for="pix">Pix</label>
+            <input type="radio" name="payment" id="credit" /><label
+              class="credit"
+              for="credit"
+              >Credit<br />
+              Card</label
+            >
+            <input type="radio" name="payment" id="debit" /><label
+              class="debit"
+              for="debit"
+              >Debit<br />
+              Card</label
+            >
+          </div>
+        </div>
+        <div class="donate-buttons">
+          <button id="donate-modal-button">
+            <img src="./src/assets/images/heart-icon.png" alt="heart icon" />I
+            wanna Help!
+          </button>
+          <button class="cancel-donate-button" onclick="closeDonateModal()">
+            <img
+              src="./src/assets/images/CaretLeft.png"
+              alt="caret left"
+            />Cancel
+          </button>
+        </div>
+      </form>
+    </dialog>
     <main>
       <section class="adoptables">
         <button id="back-button" onclick="back()">
