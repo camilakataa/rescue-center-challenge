@@ -22,6 +22,8 @@ To accomplish this task, the only technologies allowed to use were HTML, CSS and
 This project contains the main page, with information about the Rescue Center. The buttons *Donate Button* and *Apply to Adopt* open the *Donate Modal* and the *Adopt Modal*, respectively. The button *View Adoptables* open a new page html with the list of the availables pets for adoption. Every page has a button to go back to the main page and the Modals have a button to cancel the action, also returning to the main page.<br><br>
 After the user donate, apply to adopt or subscribe an email to the newsletter, the page success appears with a message. The page success was free to create any content.
 
+Page link: https://camilakataa.github.io/rescue-center-challenge/
+
 ## Figma
 
 The challenge was based accordingly to the design and user interface in 🔗[Figma](https://abrupt-sword-b4e.notion.site/Desafio-Semana-4-AWS_FRONTEND_MAI24-ad336ce3d399478aab126561a92fe3a9)
